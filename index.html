@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Study Tools for College Students</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-inter">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Site Name -->
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-gray-900">StudyTools</h1>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary-600 font-medium transition-colors">Home</a>
+                    <a href="#tools" class="text-gray-700 hover:text-primary-600 font-medium transition-colors">Study Tools</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary-600 font-medium transition-colors">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary-600 font-medium transition-colors">Contact</a>
+                </nav>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="mobile-menu-btn text-gray-700 hover:text-primary-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu md:hidden fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+            <div class="bg-white w-64 h-full shadow-lg">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-8">
+                        <h2 class="text-xl font-bold text-gray-900">StudyTools</h2>
+                        <button class="mobile-menu-close text-gray-500 hover:text-gray-700">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="space-y-4">
+                        <a href="#home" class="block text-gray-700 hover:text-primary-600 font-medium transition-colors">Home</a>
+                        <a href="#tools" class="block text-gray-700 hover:text-primary-600 font-medium transition-colors">Study Tools</a>
+                        <a href="#about" class="block text-gray-700 hover:text-primary-600 font-medium transition-colors">About</a>
+                        <a href="#contact" class="block text-gray-700 hover:text-primary-600 font-medium transition-colors">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="hero-title text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+                    Best Study Tools for
+                    <span class="text-primary-600">College Students</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Discover the most effective digital tools and apps that will help you ace your exams, 
+                    stay organized, and maximize your learning potential.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#tools" class="btn-primary text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        Explore Tools
+                    </a>
+                    <a href="#about" class="btn-secondary text-gray-700 font-semibold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Study Tools Section -->
+    <section id="tools" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Featured Study Tools
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Curated selection of the most effective tools used by top-performing students worldwide
+                </p>
+            </div>
+
+            <!-- Tools Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Notion Card -->
+                <div class="tool-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+                    <div class="h-48 tool-gradient-1 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="tool-icon bg-black">
+                                <span>N</span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900">Notion</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Notion</h3>
+                        <p class="text-gray-600 mb-4">
+                            All-in-one workspace for notes, projects, and collaboration. Perfect for organizing 
+                            your academic life with customizable templates and databases.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Free - $8/month</span>
+                            <a href="https://www.notion.so" target="_blank" rel="noopener noreferrer" class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Anki Card -->
+                <div class="tool-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+                    <div class="h-48 tool-gradient-2 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="tool-icon bg-blue-600">
+                                <span>A</span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900">Anki</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Anki</h3>
+                        <p class="text-gray-600 mb-4">
+                            Powerful spaced repetition flashcard app that helps you memorize information 
+                            efficiently. Perfect for language learning and exam preparation.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Free</span>
+                            <a href="https://apps.ankiweb.net" target="_blank" rel="noopener noreferrer" class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Forest Card -->
+                <div class="tool-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+                    <div class="h-48 tool-gradient-3 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="tool-icon bg-green-600">
+                                <span>🌳</span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900">Forest</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Forest</h3>
+                        <p class="text-gray-600 mb-4">
+                            Stay focused and plant real trees while studying. This app helps you build 
+                            better study habits and contribute to environmental conservation.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">$1.99</span>
+                            <a href="https://www.forestapp.cc" target="_blank" rel="noopener noreferrer" class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                                Get App
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quizlet Card -->
+                <div class="tool-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+                    <div class="h-48 tool-gradient-4 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="tool-icon bg-purple-600">
+                                <span>Q</span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900">Quizlet</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Quizlet</h3>
+                        <p class="text-gray-600 mb-4">
+                            Create and share flashcards, study sets, and practice tests. Access millions 
+                            of study materials created by students and teachers worldwide.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Free - $35/year</span>
+                            <a href="https://quizlet.com" target="_blank" rel="noopener noreferrer" class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                                Start Learning
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grammarly Card -->
+                <div class="tool-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+                    <div class="h-48 tool-gradient-5 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="tool-icon bg-emerald-600">
+                                <span>G</span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900">Grammarly</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Grammarly</h3>
+                        <p class="text-gray-600 mb-4">
+                            AI-powered writing assistant that helps you write better papers and essays. 
+                            Checks grammar, style, and tone in real-time.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Free - $12/month</span>
+                            <a href="https://www.grammarly.com" target="_blank" rel="noopener noreferrer" class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                                Try Free
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Todoist Card -->
+                <div class="tool-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+                    <div class="h-48 tool-gradient-6 flex items-center justify-center">
+                        <div class="text-center">
+                            <div class="tool-icon bg-red-600">
+                                <span>✓</span>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900">Todoist</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Todoist</h3>
+                        <p class="text-gray-600 mb-4">
+                            Organize your assignments, deadlines, and study sessions with this powerful 
+                            task management app. Never miss a deadline again.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Free - $4/month</span>
+                            <a href="https://todoist.com" target="_blank" rel="noopener noreferrer" class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                                Get Organized
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Why Choose These Tools?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We've carefully selected these tools based on their effectiveness, ease of use, 
+                    and proven track record of helping students succeed academically.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center feature-card">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Proven Results</h3>
+                    <p class="text-gray-600">These tools have helped millions of students improve their grades and study habits.</p>
+                </div>
+                
+                <div class="text-center feature-card">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Mobile Friendly</h3>
+                    <p class="text-gray-600">Study anywhere, anytime with apps that work seamlessly across all your devices.</p>
+                </div>
+                
+                <div class="text-center feature-card">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Time Saving</h3>
+                    <p class="text-gray-600">Streamline your study process and focus on what matters most - learning effectively.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Ready to Transform Your Study Habits?
+            </h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Start using these powerful tools today and see the difference in your academic performance.
+            </p>
+            <a href="#tools" class="btn-primary text-white font-semibold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 inline-block">
+                Get Started Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">StudyTools</h3>
+                    <p class="text-gray-400">
+                        Helping college students find the best digital tools for academic success.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#tools" class="hover:text-white transition-colors">Study Tools</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Study Tips</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Product Reviews</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Student Guide</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Newsletter</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 StudyTools. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
